@@ -9,7 +9,6 @@ if (a % 2 == 0)
     }
 }
 else
-
     a = a - 1;
 {
     while (0 < a)
