@@ -15,6 +15,7 @@ void Resault(int[] coorA, int[] coorB)
     Console.WriteLine("Расстояние между точками");
     Console.WriteLine("{0: 0.00}", number);
 }
+
 Console.WriteLine("Введите кординаты точек");
 int[] dotA = new int[3];
 int[] dotB = new int[3];
