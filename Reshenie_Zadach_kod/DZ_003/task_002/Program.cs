@@ -6,7 +6,6 @@ void Record(int[] coordinates)
     {
         coordinates[index] = int.Parse(Console.ReadLine()!);
     }
-
 }
 void Resault(int[] coorA, int[] coorB)
 {
