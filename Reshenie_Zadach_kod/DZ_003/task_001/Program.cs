@@ -10,6 +10,7 @@ void Polindrom(int resault)
     if (masiv[0] == masiv[4] && masiv[1] == masiv[3]) Console.WriteLine("Это полиндром");
     else Console.WriteLine("Это не полиндром");
 }
+
 Console.WriteLine("Введите пятизначное число");
 int number = int.Parse(Console.ReadLine()!);
 Polindrom(number);

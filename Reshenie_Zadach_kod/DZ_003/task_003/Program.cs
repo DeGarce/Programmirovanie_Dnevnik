@@ -1,4 +1,5 @@
-﻿void Resault(int[] variable)
+﻿//Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+void Resault(int[] variable)
 {
     int length = variable.Length;
     for (int index = 0; index < length; index++)
