@@ -50,7 +50,7 @@ int Summa(int[] number)
     int resault = 0;
     for (int i = 0; i < length; i++)
     {
-        resault = resault + number[i];
+        resault = number[i] - resault;
     }
     return resault;
 }
@@ -66,7 +66,7 @@ int[] resault = new int[2];
 resault = Comparison(masiv);
 int answer = Summa(resault);
 Console.WriteLine();
-Console.WriteLine(answer);
+Console.WriteLine(answer + "-разница между минимальным и максимальным элементов");
 
 
 
