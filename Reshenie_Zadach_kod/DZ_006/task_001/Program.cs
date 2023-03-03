@@ -29,14 +29,10 @@ int Check(int[] element)
     return resault;
 }
 
-
-
-
-
 int amount = GetIntFormUser("Введите размер масива");
 int[] masiv = new int[amount];
 ArrayMasiv(masiv);
-int answer=Check(masiv);
+int answer = Check(masiv);
 Console.WriteLine();
 Console.WriteLine(answer + "-количество чисел больше 0");
 
