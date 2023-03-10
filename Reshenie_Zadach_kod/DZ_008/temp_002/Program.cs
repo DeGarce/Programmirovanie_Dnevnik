@@ -50,24 +50,24 @@ int[] AdditionElements(int[,] number)
             summa = summa + number[i, j];
         }
         variable[i] = summa;
-        summa=0;
+        summa = 0;
     }
     return variable;
 }
-void ComparisonResults(int [] answer)
+void ComparisonResults(int[] answer)
 {
-    int length=answer.Length;
-    int temp=0;
-    int element=0;
+    int length = answer.Length;
+    int temp = 0;
+    int element = 0;
     for (int i = 0; i < length; i++)
     {
-        if(answer[i]<answer[temp])
+        if (answer[i] < answer[temp])
         {
-          temp=i;
-          element=answer[i];
+            temp = i;
+            element = answer[i];
         }
     }
-    Console.WriteLine(temp +"-строка с суммой "+element);
+    Console.WriteLine(temp + "-строка с суммой " + element);
 }
 
 int amountLines = GetIntFormUser("Введите количество строк");
@@ -75,7 +75,7 @@ int amountColumns = GetIntFormUser("Введите количество стол
 int min = GetIntFormUser("Введите минимальный элемент");
 int max = GetIntFormUser("Введите максимальный элемент");
 int[,] masiv = new int[amountLines, amountColumns];
-int [] resault=new int[amountLines];
+int[] resault = new int[amountLines];
 FillNumber(masiv, min, max);
 PrintNumber(masiv);
 resault = AdditionElements(masiv);
