@@ -12,8 +12,8 @@ int GetIntFormUser(string text)
 }
 int SummaNumber(int min1, int max1)
 {
-   if(min1>max1) return 0;
-   else return min1 + SummaNumber(min1+1,max1);
+    if (min1 > max1) return 0;
+    else return min1 + SummaNumber(min1 + 1, max1);
 }
 
 int min = GetIntFormUser("Введите число M");
