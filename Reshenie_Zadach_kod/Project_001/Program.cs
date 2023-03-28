@@ -33,9 +33,14 @@ string[] CheckingSymbols(string[] symbols)
 }
 void PrintString(string[] col)
 {
+    string temp;
     for (int i = 0; i < col.Length; i++)
     {
-        Console.WriteLine(col[i]);
+        temp = col[i];
+        if (temp.Length > 0)
+        {
+            Console.Write(temp + ",");
+        }
     }
 }
 
@@ -43,4 +48,7 @@ void PrintString(string[] col)
 
 int number = GetIntFormUser("Введите длинну масива");
 string[] words = new string[number];
+string[] elements = new string[number];
 FillingWordsUser(words);
+elements = CheckingSymbols(words);
+PrintString(elements);
