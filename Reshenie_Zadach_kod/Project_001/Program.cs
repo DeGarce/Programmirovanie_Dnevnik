@@ -9,23 +9,38 @@
     } while (!flag);
     return num;
 }
-void FillingWordsUser(string [] value)
+void FillingWordsUser(string[] value)
 {
     for (int i = 0; i < value.Length; i++)
     {
-       Console.WriteLine("Введите "+ i + " значение");
+        Console.WriteLine("Введите " + i + " значение");
         value[i] = Console.ReadLine();
+    }
+}
+string[] CheckingSymbols(string[] symbols)
+{
+    string temp;
+    string[] element = new string[symbols.Length];
+    for (int i = 0; i < symbols.Length; i++)
+    {
+        temp = symbols[i];
+        if (temp.Length <= 3)
+        {
+            element[i] = temp;
+        }
+    }
+    return element;
+}
+void PrintString(string[] col)
+{
+    for (int i = 0; i < col.Length; i++)
+    {
+        Console.WriteLine(col[i]);
     }
 }
 
 
 
-
-
-
-
-
-
 int number = GetIntFormUser("Введите длинну масива");
-string [] words= new string [number];
+string[] words = new string[number];
 FillingWordsUser(words);
