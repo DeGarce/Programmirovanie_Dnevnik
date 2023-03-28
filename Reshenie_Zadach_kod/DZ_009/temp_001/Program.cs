@@ -17,7 +17,6 @@ void PrintNumber(int collection)
         Console.WriteLine(collection);
         PrintNumber(collection - 1);
     }
-
 }
 
 int amount = GetIntFormUser("Введите число N");
