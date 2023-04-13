@@ -18,7 +18,6 @@ void PrintNumber(int collection)
         PrintNumber(collection - 1);
     }
 }
-
 int amount = GetIntFormUser("Введите число N");
 PrintNumber(amount);
 
